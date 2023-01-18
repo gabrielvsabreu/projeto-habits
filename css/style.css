@@ -1,13 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 125%;
 }
 
 body {
   background-color: #09090A;
   color: white;
 
-  display: grid;
-  place-items: center;
-
   height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 50px;
+}
+
+button {
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #8b5cf6;
+  background-color: transparent;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#form-habits {
+  display: flex;
+
+  padding: 0 50px;
+}
+
+.habits {
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 25px;
+}
+
+.habit {
+  width: 65px;
+  height: 65px;
+
+  font-size: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  margin-left: 30px;
+  gap: 45px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.day div {
+  margin-bottom: 5px;
+  color: #a1a1aa;
+  text-align: center;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 64px;
+  height: 64px;
+
+  border: 2px solid #27272a;
+  border-radius: 8px;
+
+  background-color: #18181b;
+}
+
+/* Pseudoselector */
+input:checked {
+  background-color: #8b5cf6;
+  border: 2px solid #a78bfa;
+
 }
